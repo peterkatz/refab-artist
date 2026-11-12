@@ -1,0 +1,37 @@
+# Python dependencies for the development tooling: the gates under
+# `scripts/`, the validator they use, the fixture generators under
+# `tests/fixtures/_scripts/`, and the pytest suite under `tests/`.
+#
+# None of this ships with the Refab Artist app. Install with
+#   python3 -m pip install -r tools/requirements.txt
+
+# Geometry arrays (functional gate validator, radial geometry gate, fixtures,
+# and the app icon renderer tools/icon/make_app_icon.py).
+numpy>=1.26
+
+# DXF reader for the functional gate validator. Optional at runtime (the
+# validator has a built-in fallback reader), listed so results match the
+# documented setup.
+ezdxf>=1.2
+
+# Mesh proximity queries for scripts/radial_geometry_gate.py and
+# scripts/audit_mothermold_geometry.py; rtree and scipy back trimesh's
+# nearest-point and signed-distance queries (trimesh does not install either).
+trimesh>=4.0
+rtree>=1.0
+scipy>=1.11
+
+# Polygon checks on Folded nets in tests/gates/test_gate_mutations.py.
+shapely>=2.0
+
+# STL reading and writing for the fixture generators in tests/fixtures/_scripts/.
+numpy-stl>=3.1
+
+# Off-screen STL previews (scripts/render_stl_preview.py).
+matplotlib>=3.8
+
+# PNG writing for tools/generate_matcaps.py (the viewport matcap images).
+Pillow>=10.0
+
+# Test runner.
+pytest>=8.0

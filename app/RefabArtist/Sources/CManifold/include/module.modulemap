@@ -1,0 +1,4 @@
+module CManifold {
+    umbrella header "CManifold.h"
+    export *
+}

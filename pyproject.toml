@@ -1,0 +1,12 @@
+# Repo-root Python configuration, scoped to pytest only. The tests import
+# the tooling as `tools.*` and `scripts.*`, so the repo root goes on
+# `sys.path`.
+#
+# Not a packaging declaration: Refab Artist the macOS app is built via
+# `swift build`. The Python here is local development tooling (gates,
+# benchmark, fixture generators), not a shipped artefact.
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "--strict-markers"

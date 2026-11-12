@@ -1,0 +1,4 @@
+# Builds the user guide at https://peterkatz.github.io/refab-artist/
+#   python3 -m venv venv && venv/bin/pip install -r guide/requirements.txt
+#   venv/bin/mkdocs build --strict      # writes build/site
+mkdocs-material==9.7.7

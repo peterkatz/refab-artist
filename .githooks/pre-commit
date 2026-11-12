@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# Refab Artist pre-commit hook.
+#
+# Opt-in: enable per clone with
+#   git config core.hooksPath .githooks
+# See docs/contributing-hooks.md for the one-time setup.
+#
+# Local enforcement layer for the clean-room boundary. There is no CI: the
+# maintainer runs `scripts/check-no-foreign-assets.sh --all` before merging
+# outside contributions, so a change that bypasses this hook is still checked.
+
+set -e
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+exec bash "$REPO_ROOT/scripts/check-no-foreign-assets.sh" --staged

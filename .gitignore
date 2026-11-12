@@ -1,0 +1,37 @@
+build/
+build-cmake/
+.build/
+.swiftpm/
+DerivedData/
+*.xcuserstate
+.DS_Store
+.openclaw/
+
+# Generated run reports (JSON / HTML) from local tooling. Report pages meant
+# for the docs are added explicitly under docs/reports/.
+reports/
+
+# Functional-gate generated run report (the parts.dxf.zip candidate fixtures
+# under tests/fixtures/functional-gate/ ARE committed; the report is not).
+tests/fixtures/functional-gate/functional_gate.json
+.benchmark-output/
+__pycache__/
+*.pyc
+.pytest_cache/
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+
+# Other software's files — clean-room boundary enforcement.
+#
+# These patterns block accidental staging of application bundles and
+# compiled interface files. The full check (bundles, binaries, interface
+# files, icons, installers, help documents) is
+# scripts/check-no-foreign-assets.sh, which runs as an opt-in pre-commit
+# hook (.githooks/pre-commit) and is run by the maintainer with --all before
+# merging outside contributions. See AGENTS.md "What stays out of the repo".
+*.app/
+**/*.nib
+.herenow/

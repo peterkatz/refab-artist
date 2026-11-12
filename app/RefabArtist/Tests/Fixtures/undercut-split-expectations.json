@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "qualityMappingProvisional": true,
+  "analyticExpectations": [
+    {
+      "id": "cube_x",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "cube_y",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "cube_z",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "sphere_x",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "sphere_y",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "sphere_z",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "torus_z",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "l_prism_z",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "l_prism_diagonal",
+      "expectedRegionCount": null,
+      "expectedWorstDepthMM": 21.213203435596427,
+      "depthToleranceMM": 0.5
+    },
+    {
+      "id": "blind_side_hole_z",
+      "expectedRegionCount": null,
+      "expectedWorstDepthMM": 8.0,
+      "depthToleranceMM": 0.5
+    },
+    {
+      "id": "blind_side_hole_opening_y",
+      "expectedRegionCount": 0,
+      "expectedWorstDepthMM": null,
+      "depthToleranceMM": null
+    },
+    {
+      "id": "shallow_bead_z",
+      "expectedRegionCount": null,
+      "expectedWorstDepthMM": 1.5,
+      "depthToleranceMM": 0.5
+    }
+  ],
+  "realScanBaselines": [
+    {
+      "fileName": "handStand_ex3_healed_50k.obj",
+      "sourceFileSHA256": "889bf5d44823a4d5046256563a9065a06b6bbf81ca8a563b29f77eb8e1291589",
+      "rawGeometryFingerprint": "9d129d2ef2ad2b4d",
+      "effectiveGeometryFingerprint": "9d129d2ef2ad2b4d",
+      "preprocess": {
+        "kind": "none",
+        "detail": null
+      },
+      "settings": {
+        "undercutToleranceMM": 2.0,
+        "minRegionAreaMM2": 4.0,
+        "quality": "standard",
+        "maxPieces": 13,
+        "seed": 0
+      },
+      "rawPreflight": {
+        "triangleCount": 16158,
+        "degenerateTriangleCount": 2,
+        "boundaryEdgeCount": 0,
+        "nonManifoldEdgeCount": 4,
+        "invalidTriangleReferenceCount": 0
+      },
+      "effectivePreflight": {
+        "triangleCount": 16158,
+        "degenerateTriangleCount": 2,
+        "boundaryEdgeCount": 0,
+        "nonManifoldEdgeCount": 4,
+        "invalidTriangleReferenceCount": 0
+      },
+      "measurement": {
+        "pullAxis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quality": "standard",
+        "baseResolutionMM": 0.7657216547615804,
+        "effectiveResolutionMM": 0.1914304136903951,
+        "sampleCount": 116970,
+        "maximumSamples": 240000,
+        "sampleBudgetExhausted": false,
+        "violatingColumnCount": 84227,
+        "regionCount": 45,
+        "worstDepthMM": 29.536330849063923,
+        "worstDepthRegressionToleranceMM": 0.1914304136903951
+      },
+      "m2SplitExpectation": null
+    },
+    {
+      "fileName": "handStand_ex3_ui_healed.obj",
+      "sourceFileSHA256": "84492c1a40fd8c39d8ae34e0cc74b436e32b18b725ade5a2c7df8b7b8cb4dca4",
+      "rawGeometryFingerprint": "bccef74222ed7eae",
+      "effectiveGeometryFingerprint": "bccef74222ed7eae",
+      "preprocess": {
+        "kind": "none",
+        "detail": null
+      },
+      "settings": {
+        "undercutToleranceMM": 2.0,
+        "minRegionAreaMM2": 4.0,
+        "quality": "standard",
+        "maxPieces": 13,
+        "seed": 0
+      },
+      "rawPreflight": {
+        "triangleCount": 22520,
+        "degenerateTriangleCount": 0,
+        "boundaryEdgeCount": 0,
+        "nonManifoldEdgeCount": 0,
+        "invalidTriangleReferenceCount": 0
+      },
+      "effectivePreflight": {
+        "triangleCount": 22520,
+        "degenerateTriangleCount": 0,
+        "boundaryEdgeCount": 0,
+        "nonManifoldEdgeCount": 0,
+        "invalidTriangleReferenceCount": 0
+      },
+      "measurement": {
+        "pullAxis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quality": "standard",
+        "baseResolutionMM": 0.7669885059248137,
+        "effectiveResolutionMM": 0.19174712648120343,
+        "sampleCount": 158925,
+        "maximumSamples": 240000,
+        "sampleBudgetExhausted": false,
+        "violatingColumnCount": 118456,
+        "regionCount": 42,
+        "worstDepthMM": 29.087309204143263,
+        "worstDepthRegressionToleranceMM": 0.19174712648120343
+      },
+      "m2SplitExpectation": null
+    },
+    {
+      "fileName": "open_hemisphere_mask.obj",
+      "sourceFileSHA256": "1f6e75b040d8693a4522797aa0b7bf4965542123ae2721c492e5f8e7e9cff7c3",
+      "rawGeometryFingerprint": "0e62797e1b5f6808",
+      "effectiveGeometryFingerprint": "e1e6158ef2d20fb8",
+      "preprocess": {
+        "kind": "makeWatertight",
+        "detail": 0.0
+      },
+      "settings": {
+        "undercutToleranceMM": 2.0,
+        "minRegionAreaMM2": 4.0,
+        "quality": "standard",
+        "maxPieces": 8,
+        "seed": 0
+      },
+      "rawPreflight": {
+        "triangleCount": 608,
+        "degenerateTriangleCount": 0,
+        "boundaryEdgeCount": 32,
+        "nonManifoldEdgeCount": 0,
+        "invalidTriangleReferenceCount": 0
+      },
+      "effectivePreflight": {
+        "triangleCount": 10346,
+        "degenerateTriangleCount": 0,
+        "boundaryEdgeCount": 0,
+        "nonManifoldEdgeCount": 0,
+        "invalidTriangleReferenceCount": 0
+      },
+      "measurement": {
+        "pullAxis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quality": "standard",
+        "baseResolutionMM": 0.41121812491855975,
+        "effectiveResolutionMM": 0.20560906245927987,
+        "sampleCount": 29945,
+        "maximumSamples": 240000,
+        "sampleBudgetExhausted": false,
+        "violatingColumnCount": 3,
+        "regionCount": 2,
+        "worstDepthMM": 0.48502989372572936,
+        "worstDepthRegressionToleranceMM": 0.20560906245927987
+      },
+      "m2SplitExpectation": null
+    }
+  ]
+}
