@@ -84,10 +84,10 @@ other material) you agree that:
 
 1. you wrote it, or otherwise have the right to submit it under these terms;
 2. you license it to the project under GPL-3.0; and
-3. you additionally grant Pete Katz a perpetual, worldwide, non-exclusive,
-   royalty-free licence to use, reproduce, modify, sublicense, and distribute
-   your contribution under any licence, including proprietary and commercial
-   licences, as part of Refab Artist or works derived from it.
+3. you additionally grant Pete Katz a perpetual, irrevocable, worldwide,
+   non-exclusive, royalty-free licence to use, reproduce, modify, sublicense,
+   and distribute your contribution under any licence, including proprietary
+   and commercial licences, as part of Refab Artist or works derived from it.
 
 You keep your copyright; this is a licence grant, not an assignment. It keeps
 Refab Artist free under the GPL while leaving the maintainer able to offer it under
